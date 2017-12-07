@@ -3,6 +3,8 @@
 import libnum
 import gmpy2
 
+# 特征是 e=2
+
 f = open('res/rabinCrackflag.enc','r')
 c = f.read()
 c = libnum.s2n(c)
