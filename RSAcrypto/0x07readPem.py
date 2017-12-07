@@ -3,7 +3,7 @@
 
 from Crypto.PublicKey import RSA
 from libnum import s2n
-A = RSA.importKey(open('/Users/loo/Documents/CTF/crypto/rsa/hardRSA/pubkey.pem').read())
+A = RSA.importKey(open('res/readPempubkey.pem').read())
 print A.n
 print "n的长度：" + str(len(bin(A.n)) - 2)
 print A.e
