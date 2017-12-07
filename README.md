@@ -1,6 +1,9 @@
 # ctfCrypto
 
-#Depends libs  
+# Dependency
 `gmpy`   
 `gmpy2`  
 `libnum`  
+`hashlib`  
+`pycrypto`  
+
