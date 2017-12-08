@@ -4,6 +4,6 @@
 from Crypto.PublicKey import RSA
 from libnum import s2n
 A = RSA.importKey(open('res/readPempubkey.pem').read())
-print A.n
-print "n的长度：" + str(len(bin(A.n)) - 2)
-print A.e
+print "n = " + str(A.n)
+print "len(n) = " + str(len(bin(A.n)) - 2)
+print "e = " + str(A.e)
