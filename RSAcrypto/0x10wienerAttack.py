@@ -9,6 +9,10 @@ from Crypto.PublicKey import RSA
 from libnum import n2s
 
 
+# 这里注意一个细节问题，如果在运行脚本的时候报错，请在脚本前加上：
+# import   sys
+# sys.setrecursionlimit(10000000)
+
 A = RSA.importKey(open('res/wienerAttack.pub').read())
 print "n = " + str(A.n)
 print "len(n) = " + str(len(bin(A.n)) - 2)
